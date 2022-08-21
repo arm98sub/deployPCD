@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-afo5g^^9m76$d*iy6n$@lok@j4he%10_usy)62yu%6n#6*!^kz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["3.80.87.166"]
 
 
 # Application definition
@@ -116,9 +116,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static/'),
-)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+#STATICFILES_DIRS = (
+ #   os.path.join(BASE_DIR, 'static/'),
+#)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -138,5 +139,5 @@ LOGOUT_REDIRECT_URL = reverse_lazy('usuarios:login')
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'plataformadigitalc@gmail.com'
-EMAIL_HOST_PASSWORD = 'comercial_21'
-EMAIL_PORT = 587
+EMAIL_HOST_PASSWORD = 'dhrmaiqqxfjgbxip'
+EMAIL_PORT = 58
